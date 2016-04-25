@@ -9,12 +9,13 @@ security:
     password: password
   oauth2:
     client:
-      accessTokenUri: http://localhost:9999/uaa/oauth/token
-      userAuthorizationUri: http://localhost:9999/uaa/oauth/authorize
-      clientId: acme
-      clientSecret: acmesecret
+      clientId: 514021394939-2d5hc030dafqtqvvpk1rfo1f4t3ne59h.apps.googleusercontent.com
+      clientSecret: IW4sK2K_nDOc7BcRpepb4DE8
+      accessTokenUri: https://www.googleapis.com/oauth2/v4/token
+      userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
+      scope: "profile email"
     resource:
-      userInfoUri: http://localhost:9999/uaa/user
+      userInfoUri: https://www.googleapis.com/oauth2/v2/userinfo
 
 zuul:
   routes:
